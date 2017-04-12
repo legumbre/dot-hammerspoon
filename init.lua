@@ -4,8 +4,6 @@
 -- author: Leonardo Etcheverry <leo@kalio.net>
 --
 
-print "hs init.lua: starting"
-
 local hsapp = hs.application
 local hswin = hs.window
 local hswf  = hs.window.filter
@@ -92,4 +90,11 @@ function run_or_raise_next(appname, command)
    end
 end
 
-print "hs init.lua: done"
+-- screen lock
+root:bind_ae("ctrl", "l", nil, hs.caffeinate.lockScreen)
+
+
+-------------------------------------
+hs.alert("Hammerspoon config: done!")
+-------------------------------------
+
