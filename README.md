@@ -1,7 +1,7 @@
 
 My [Hammerspoon](http://www.hammerspoon.org) configuration.
 
-All actions bound under C-t modal:
+All actions bound under ```C-t``` modal binding:
 
  - ```e``` run or raise Emacs
  - ```c``` run or raise iTerm
